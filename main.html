@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Luxe Mist Perfume</title>
 
     <!-- Remix Icon List -->
@@ -11,41 +12,131 @@
       rel="stylesheet"
     />
 
-    <!-- CSS Style Sheet -->
-    <link rel="stylesheet" href="assets/css/lp-style.css" />
+    <!-- CSS Style Sheets -->
+    <link rel="stylesheet" href="assets/css/header-style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="hero">
-      <video
-        autoplay
-        loop
-        muted
-        plays-inline
-        class="background__video"
-        id="bgVideo"
-      >
-        <source src="assets/videos/landing-page.mp4" type="video/mp4" />
-      </video>
+    <!-- Header Section Starting... -->
+    <header class="header">
+      <nav class="nav container">
+        <!-- Navigation Toggle and Logo Section -->
+        <div class="nav__data">
+          <a href="index.html" class="nav__logo">
+            <i class="ri-mist-line"></i> Luxe Mist Perfumes
+          </a>
 
-      <nav>
-        <a href="index.html" class="nav__logo">
-          <i class="ri-mist-line"></i> Explore the Symphony of Scents✨
-        </a>
-        
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!-- Navigational Menu Section -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <!-- Section 1: Home -->
+            <li>
+              <a href="index.html" class="nav__link"> Home </a>
+            </li>
+
+            <!-- Section 2: Perfume Designers -->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Perfume Designers
+                <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <!-- Navigational Menu Sub Section -->
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <img src="assets/images/mfk-logo.png" class="brand__logo" />
+                    Maison Francis Kurkdjian
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <img
+                      src="assets/images/creed-logo.png"
+                      class="brand__logo"
+                    />
+                    Creed
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <img
+                      src="assets/images/tom-ford-logo.png"
+                      class="brand__logo"
+                    />
+                    Tom Ford
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <img
+                      src="assets/images/paco-rabanne-logo.png"
+                      class="brand__logo"
+                    />
+                    Paco Rabanne
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <img
+                      src="assets/images/chanel-logo.png"
+                      class="brand__logo"
+                    />
+                    Chanel
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Section 3: Perfume Notes -->
+
+            <!-- Section 4: Community -->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Community <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-user-line"></i> About Us
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-lock-line"></i> Social Media Links
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    <i class="ri-message-3-line"></i> Important Updates
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Section 5: Contact -->
+            <li>
+              <a href="#" class="nav__link"> Contact </a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <div class="content">
-        <h1>Luxe Mist Perfumes</h1>
-        <a href="index.html">Explore</a>
-      </div>
-    </div>
+    </header>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const video = document.getElementById("bgVideo");
-        if (video) {
-          video.playbackRate = 0.75; // 0.5 = half speed, 1 = normal, 2 = double
-        }
-      });
-    </script>
+    <!-- JS Script Files -->
+    <script src="assets/js/header-script.js"></script>
   </body>
 </html>
