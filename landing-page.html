@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxe Mist Perfume</title>
+
+    <!-- Remix Icon List -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="assets/css/lp-style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <video
+        autoplay
+        loop
+        muted
+        plays-inline
+        class="background__video"
+        id="bgVideo"
+      >
+        <source src="assets/videos/landing-page.mp4" type="video/mp4" />
+      </video>
+
+      <nav>
+        <a href="index.html" class="nav__logo">
+          <i class="ri-mist-line"></i> Explore the Symphony of Scents✨
+        </a>
+        
+      </nav>
+      <div class="content">
+        <h1>Luxe Mist Perfumes</h1>
+        <a href="index.html">Explore</a>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const video = document.getElementById("bgVideo");
+        if (video) {
+          video.playbackRate = 0.75; // 0.5 = half speed, 1 = normal, 2 = double
+        }
+      });
+    </script>
+  </body>
+</html>
