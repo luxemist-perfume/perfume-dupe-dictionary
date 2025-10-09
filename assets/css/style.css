@@ -514,3 +514,8 @@ img {
     padding-inline: 2.5rem;
   }
 }
+
+.div__intro {
+padding-top: 4.5rem;
+text-align: center;
+}
